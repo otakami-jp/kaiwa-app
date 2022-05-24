@@ -1,0 +1,603 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5802950D283CC84D00FFB2C9 /* kaiwaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5802950C283CC84D00FFB2C9 /* kaiwaApp.swift */; };
+		5802950F283CC84D00FFB2C9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5802950E283CC84D00FFB2C9 /* ContentView.swift */; };
+		58029511283CC85400FFB2C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58029510283CC85400FFB2C9 /* Assets.xcassets */; };
+		58029514283CC85400FFB2C9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58029513283CC85400FFB2C9 /* Preview Assets.xcassets */; };
+		58029516283CC85400FFB2C9 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58029515283CC85400FFB2C9 /* Persistence.swift */; };
+		58029519283CC85400FFB2C9 /* kaiwa.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 58029517283CC85400FFB2C9 /* kaiwa.xcdatamodeld */; };
+		58029523283CC85400FFB2C9 /* kaiwaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58029522283CC85400FFB2C9 /* kaiwaTests.swift */; };
+		5802952D283CC85400FFB2C9 /* kaiwaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5802952C283CC85400FFB2C9 /* kaiwaUITests.swift */; };
+		5802952F283CC85400FFB2C9 /* kaiwaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5802952E283CC85400FFB2C9 /* kaiwaUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5802951F283CC85400FFB2C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 58029501283CC84D00FFB2C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 58029508283CC84D00FFB2C9;
+			remoteInfo = kaiwa;
+		};
+		58029529283CC85400FFB2C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 58029501283CC84D00FFB2C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 58029508283CC84D00FFB2C9;
+			remoteInfo = kaiwa;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		58029509283CC84D00FFB2C9 /* kaiwa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kaiwa.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5802950C283CC84D00FFB2C9 /* kaiwaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kaiwaApp.swift; sourceTree = "<group>"; };
+		5802950E283CC84D00FFB2C9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		58029510283CC85400FFB2C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		58029513283CC85400FFB2C9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		58029515283CC85400FFB2C9 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		58029518283CC85400FFB2C9 /* kaiwa.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = kaiwa.xcdatamodel; sourceTree = "<group>"; };
+		5802951E283CC85400FFB2C9 /* kaiwaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kaiwaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		58029522283CC85400FFB2C9 /* kaiwaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kaiwaTests.swift; sourceTree = "<group>"; };
+		58029528283CC85400FFB2C9 /* kaiwaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kaiwaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5802952C283CC85400FFB2C9 /* kaiwaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kaiwaUITests.swift; sourceTree = "<group>"; };
+		5802952E283CC85400FFB2C9 /* kaiwaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kaiwaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		58029506283CC84D00FFB2C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5802951B283CC85400FFB2C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58029525283CC85400FFB2C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		58029500283CC84D00FFB2C9 = {
+			isa = PBXGroup;
+			children = (
+				5802950B283CC84D00FFB2C9 /* kaiwa */,
+				58029521283CC85400FFB2C9 /* kaiwaTests */,
+				5802952B283CC85400FFB2C9 /* kaiwaUITests */,
+				5802950A283CC84D00FFB2C9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5802950A283CC84D00FFB2C9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				58029509283CC84D00FFB2C9 /* kaiwa.app */,
+				5802951E283CC85400FFB2C9 /* kaiwaTests.xctest */,
+				58029528283CC85400FFB2C9 /* kaiwaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5802950B283CC84D00FFB2C9 /* kaiwa */ = {
+			isa = PBXGroup;
+			children = (
+				5802950C283CC84D00FFB2C9 /* kaiwaApp.swift */,
+				5802950E283CC84D00FFB2C9 /* ContentView.swift */,
+				58029510283CC85400FFB2C9 /* Assets.xcassets */,
+				58029515283CC85400FFB2C9 /* Persistence.swift */,
+				58029517283CC85400FFB2C9 /* kaiwa.xcdatamodeld */,
+				58029512283CC85400FFB2C9 /* Preview Content */,
+			);
+			path = kaiwa;
+			sourceTree = "<group>";
+		};
+		58029512283CC85400FFB2C9 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				58029513283CC85400FFB2C9 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		58029521283CC85400FFB2C9 /* kaiwaTests */ = {
+			isa = PBXGroup;
+			children = (
+				58029522283CC85400FFB2C9 /* kaiwaTests.swift */,
+			);
+			path = kaiwaTests;
+			sourceTree = "<group>";
+		};
+		5802952B283CC85400FFB2C9 /* kaiwaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5802952C283CC85400FFB2C9 /* kaiwaUITests.swift */,
+				5802952E283CC85400FFB2C9 /* kaiwaUITestsLaunchTests.swift */,
+			);
+			path = kaiwaUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		58029508283CC84D00FFB2C9 /* kaiwa */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58029532283CC85400FFB2C9 /* Build configuration list for PBXNativeTarget "kaiwa" */;
+			buildPhases = (
+				58029505283CC84D00FFB2C9 /* Sources */,
+				58029506283CC84D00FFB2C9 /* Frameworks */,
+				58029507283CC84D00FFB2C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = kaiwa;
+			productName = kaiwa;
+			productReference = 58029509283CC84D00FFB2C9 /* kaiwa.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5802951D283CC85400FFB2C9 /* kaiwaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58029535283CC85400FFB2C9 /* Build configuration list for PBXNativeTarget "kaiwaTests" */;
+			buildPhases = (
+				5802951A283CC85400FFB2C9 /* Sources */,
+				5802951B283CC85400FFB2C9 /* Frameworks */,
+				5802951C283CC85400FFB2C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				58029520283CC85400FFB2C9 /* PBXTargetDependency */,
+			);
+			name = kaiwaTests;
+			productName = kaiwaTests;
+			productReference = 5802951E283CC85400FFB2C9 /* kaiwaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		58029527283CC85400FFB2C9 /* kaiwaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58029538283CC85400FFB2C9 /* Build configuration list for PBXNativeTarget "kaiwaUITests" */;
+			buildPhases = (
+				58029524283CC85400FFB2C9 /* Sources */,
+				58029525283CC85400FFB2C9 /* Frameworks */,
+				58029526283CC85400FFB2C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5802952A283CC85400FFB2C9 /* PBXTargetDependency */,
+			);
+			name = kaiwaUITests;
+			productName = kaiwaUITests;
+			productReference = 58029528283CC85400FFB2C9 /* kaiwaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		58029501283CC84D00FFB2C9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					58029508283CC84D00FFB2C9 = {
+						CreatedOnToolsVersion = 13.4;
+					};
+					5802951D283CC85400FFB2C9 = {
+						CreatedOnToolsVersion = 13.4;
+						TestTargetID = 58029508283CC84D00FFB2C9;
+					};
+					58029527283CC85400FFB2C9 = {
+						CreatedOnToolsVersion = 13.4;
+						TestTargetID = 58029508283CC84D00FFB2C9;
+					};
+				};
+			};
+			buildConfigurationList = 58029504283CC84D00FFB2C9 /* Build configuration list for PBXProject "kaiwa" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 58029500283CC84D00FFB2C9;
+			productRefGroup = 5802950A283CC84D00FFB2C9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				58029508283CC84D00FFB2C9 /* kaiwa */,
+				5802951D283CC85400FFB2C9 /* kaiwaTests */,
+				58029527283CC85400FFB2C9 /* kaiwaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		58029507283CC84D00FFB2C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58029514283CC85400FFB2C9 /* Preview Assets.xcassets in Resources */,
+				58029511283CC85400FFB2C9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5802951C283CC85400FFB2C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58029526283CC85400FFB2C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		58029505283CC84D00FFB2C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58029516283CC85400FFB2C9 /* Persistence.swift in Sources */,
+				5802950F283CC84D00FFB2C9 /* ContentView.swift in Sources */,
+				5802950D283CC84D00FFB2C9 /* kaiwaApp.swift in Sources */,
+				58029519283CC85400FFB2C9 /* kaiwa.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5802951A283CC85400FFB2C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58029523283CC85400FFB2C9 /* kaiwaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58029524283CC85400FFB2C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5802952F283CC85400FFB2C9 /* kaiwaUITestsLaunchTests.swift in Sources */,
+				5802952D283CC85400FFB2C9 /* kaiwaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		58029520283CC85400FFB2C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 58029508283CC84D00FFB2C9 /* kaiwa */;
+			targetProxy = 5802951F283CC85400FFB2C9 /* PBXContainerItemProxy */;
+		};
+		5802952A283CC85400FFB2C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 58029508283CC84D00FFB2C9 /* kaiwa */;
+			targetProxy = 58029529283CC85400FFB2C9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		58029530283CC85400FFB2C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		58029531283CC85400FFB2C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		58029533283CC85400FFB2C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"kaiwa/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.otaka.kaiwa;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		58029534283CC85400FFB2C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"kaiwa/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.otaka.kaiwa;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		58029536283CC85400FFB2C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.otaka.kaiwaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kaiwa.app/kaiwa";
+			};
+			name = Debug;
+		};
+		58029537283CC85400FFB2C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.otaka.kaiwaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kaiwa.app/kaiwa";
+			};
+			name = Release;
+		};
+		58029539283CC85400FFB2C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.otaka.kaiwaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = kaiwa;
+			};
+			name = Debug;
+		};
+		5802953A283CC85400FFB2C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.otaka.kaiwaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = kaiwa;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		58029504283CC84D00FFB2C9 /* Build configuration list for PBXProject "kaiwa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58029530283CC85400FFB2C9 /* Debug */,
+				58029531283CC85400FFB2C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58029532283CC85400FFB2C9 /* Build configuration list for PBXNativeTarget "kaiwa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58029533283CC85400FFB2C9 /* Debug */,
+				58029534283CC85400FFB2C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58029535283CC85400FFB2C9 /* Build configuration list for PBXNativeTarget "kaiwaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58029536283CC85400FFB2C9 /* Debug */,
+				58029537283CC85400FFB2C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58029538283CC85400FFB2C9 /* Build configuration list for PBXNativeTarget "kaiwaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58029539283CC85400FFB2C9 /* Debug */,
+				5802953A283CC85400FFB2C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		58029517283CC85400FFB2C9 /* kaiwa.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				58029518283CC85400FFB2C9 /* kaiwa.xcdatamodel */,
+			);
+			currentVersion = 58029518283CC85400FFB2C9 /* kaiwa.xcdatamodel */;
+			path = kaiwa.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 58029501283CC84D00FFB2C9 /* Project object */;
+}
