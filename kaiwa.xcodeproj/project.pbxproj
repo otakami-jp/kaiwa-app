@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		5802950D283CC84D00FFB2C9 /* kaiwaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5802950C283CC84D00FFB2C9 /* kaiwaApp.swift */; };
-		5802950F283CC84D00FFB2C9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5802950E283CC84D00FFB2C9 /* ContentView.swift */; };
 		58029511283CC85400FFB2C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58029510283CC85400FFB2C9 /* Assets.xcassets */; };
 		58029514283CC85400FFB2C9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58029513283CC85400FFB2C9 /* Preview Assets.xcassets */; };
 		58029516283CC85400FFB2C9 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58029515283CC85400FFB2C9 /* Persistence.swift */; };
@@ -16,6 +15,8 @@
 		58029523283CC85400FFB2C9 /* kaiwaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58029522283CC85400FFB2C9 /* kaiwaTests.swift */; };
 		5802952D283CC85400FFB2C9 /* kaiwaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5802952C283CC85400FFB2C9 /* kaiwaUITests.swift */; };
 		5802952F283CC85400FFB2C9 /* kaiwaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5802952E283CC85400FFB2C9 /* kaiwaUITestsLaunchTests.swift */; };
+		5802953F283CE2BE00FFB2C9 /* GreetingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5802953E283CE2BE00FFB2C9 /* GreetingView.swift */; };
+		58029541283CE37800FFB2C9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58029540283CE37800FFB2C9 /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +39,6 @@
 /* Begin PBXFileReference section */
 		58029509283CC84D00FFB2C9 /* kaiwa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kaiwa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5802950C283CC84D00FFB2C9 /* kaiwaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kaiwaApp.swift; sourceTree = "<group>"; };
-		5802950E283CC84D00FFB2C9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		58029510283CC85400FFB2C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		58029513283CC85400FFB2C9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		58029515283CC85400FFB2C9 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -48,6 +48,8 @@
 		58029528283CC85400FFB2C9 /* kaiwaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kaiwaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5802952C283CC85400FFB2C9 /* kaiwaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kaiwaUITests.swift; sourceTree = "<group>"; };
 		5802952E283CC85400FFB2C9 /* kaiwaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kaiwaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5802953E283CE2BE00FFB2C9 /* GreetingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingView.swift; sourceTree = "<group>"; };
+		58029540283CE37800FFB2C9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +100,10 @@
 		5802950B283CC84D00FFB2C9 /* kaiwa */ = {
 			isa = PBXGroup;
 			children = (
+				58029544283CE43700FFB2C9 /* Ressources */,
+				58029543283CE42F00FFB2C9 /* Model */,
+				5802953D283CE29E00FFB2C9 /* Views */,
 				5802950C283CC84D00FFB2C9 /* kaiwaApp.swift */,
-				5802950E283CC84D00FFB2C9 /* ContentView.swift */,
 				58029510283CC85400FFB2C9 /* Assets.xcassets */,
 				58029515283CC85400FFB2C9 /* Persistence.swift */,
 				58029517283CC85400FFB2C9 /* kaiwa.xcdatamodeld */,
@@ -131,6 +135,29 @@
 				5802952E283CC85400FFB2C9 /* kaiwaUITestsLaunchTests.swift */,
 			);
 			path = kaiwaUITests;
+			sourceTree = "<group>";
+		};
+		5802953D283CE29E00FFB2C9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5802953E283CE2BE00FFB2C9 /* GreetingView.swift */,
+				58029540283CE37800FFB2C9 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		58029543283CE42F00FFB2C9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		58029544283CE43700FFB2C9 /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Ressources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,8 +291,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				58029516283CC85400FFB2C9 /* Persistence.swift in Sources */,
-				5802950F283CC84D00FFB2C9 /* ContentView.swift in Sources */,
+				58029541283CE37800FFB2C9 /* ContentView.swift in Sources */,
 				5802950D283CC84D00FFB2C9 /* kaiwaApp.swift in Sources */,
+				5802953F283CE2BE00FFB2C9 /* GreetingView.swift in Sources */,
 				58029519283CC85400FFB2C9 /* kaiwa.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -425,11 +453,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"kaiwa/Preview Content\"";
+				DEVELOPMENT_TEAM = 62PJHY8AW8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -453,11 +483,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"kaiwa/Preview Content\"";
+				DEVELOPMENT_TEAM = 62PJHY8AW8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

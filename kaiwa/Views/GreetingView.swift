@@ -1,5 +1,5 @@
 //
-//  Greeting.swift
+//  GreetingView.swift
 //  kaiwa
 //
 //  Created by Rayane guemmoud on 24/05/2022.
@@ -38,7 +38,7 @@ struct Greeting: View {
 //                    }
 //                }
 //            }
-        VStack {
+        VStack() {
             VStack(alignment: .center, spacing: 50) {
                 Text("Welcome to\nKaiwa")
                     .fontWeight(.bold)
@@ -56,10 +56,58 @@ struct Greeting: View {
                     .foregroundColor(Color("Dark color"))
                     .font(.system(size: 22, weight: .bold))
             }
+            VStack(alignment: .center) {
+                Button(action: signIn) {
+                    Text("Register")
+                        .fontWeight(.bold)
+                        .padding()
+                        .foregroundColor(.white)
+                        .padding(.horizontal, 120)
+                        .padding(.vertical, 2)
+
+                }
+                .background(Color("Blue color"))
+                .cornerRadius(21)
+                .padding(.vertical, 2.5)
+                
+                Button(action: logIn) {
+                    Text("Login")
+                        .fontWeight(.bold)
+                        .padding()
+                        .foregroundColor(Color("Dark color"))
+                        .padding(.horizontal, 130)
+                        .padding(.vertical, 2)
+                        .overlay(
+                                RoundedRectangle(cornerRadius: 21)
+                                    .stroke(Color("Blue color"), lineWidth: 2)
+                        )
+
+                }
+                .background(.white)
+                .padding(.vertical, 2.5)
+                
+                HStack(alignment: .center, spacing: 0.0) {
+                    Text("If you continue, you accept")
+                        .font(.caption)
+                    Link("Terms Of Service ", destination: URL(string: "https://google.fr")!)
+                        .font(.caption)
+                    Text(" and ")
+                        .font(.caption)
+                    Link("Privacy", destination: URL(string: "https://google.fr")!)
+                        .font(.caption)
+                }
+        
+            }
+                .frame(maxHeight: .infinity,
+                       alignment: Alignment.bottomLeading)
             Spacer()
         }
         //}
     }
+    
+    private func signIn() {}
+
+    private func logIn() {}
 
 //    private func addItem() {
 //        withAnimation {
@@ -100,8 +148,10 @@ struct Greeting: View {
 //    return formatter
 //}()
 
-struct ContentView_Previews: PreviewProvider {
+struct Greeting_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+        Group {
+            Greeting()
+        }
     }
 }

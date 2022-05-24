@@ -100,8 +100,8 @@ struct Greeting: View {
 //    return formatter
 //}()
 
-struct ContentView_Previews: PreviewProvider {
+struct Greeting_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+        Greeting().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
     }
 }
